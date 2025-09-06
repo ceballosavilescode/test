@@ -2,49 +2,44 @@ import time
 import os
 import sys
 
-
 def escribir_lento(texto, delay=0.1):
-	"""Imprime el texto como si estuviera siendo tecleado"""
-	for char in texto:
-		sys.stdout.write(char)
-		sys.stdout.flush()
-		time.sleep(delay)
-	sys.stdout.write("\n")  # salto de línea al final
+    """Imprime texto como si estuviera siendo tecleado"""
+    for char in texto:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(delay)
+    sys.stdout.write("\n")
 
 class Main(object):
-	def __init__(self):
+    def __init__(self):
+        usuario_pc = os.getlogin()
+        escribir_lento(usuario_pc, delay=0.08)
+        time.sleep(3)
 
-		usuario_pc = os.getlogin()
-		print(usuario_pc)
-		time.sleep(3)
+        escribir_lento("Wake up " + usuario_pc, delay=0.08)
+        time.sleep(5)
+        os.system("cls" if os.name == "nt" else "clear")
 
-		escribir_lento("Wake up " + usuario_pc, delay=0.12)
-		time.sleep(5)
+        escribir_lento("The Matrix has you...", delay=0.08)
+        time.sleep(5)
+        os.system("cls" if os.name == "nt" else "clear")
 
+        escribir_lento("Follow the white rabbit...", delay=0.08)
+        time.sleep(5)
+        os.system("cls" if os.name == "nt" else "clear")
 
-		time.sleep(5)
-		os.system("cls")
+        escribir_lento("Knock Knock " + usuario_pc, delay=0.08)
+        time.sleep(5)
+        os.system("cls" if os.name == "nt" else "clear")
 
-		print("The Matrix as you...")
-		time.sleep(5)
-		os.system("cls")
+        escribir_lento("✅ Acceso permitido", delay=0.08)
+        self.tabla_dinamica()
 
-		print("Follow the white rabbit...")
-		time.sleep(5)
-		os.system("cls")
-
-		print("Knock Knock " + usuario_pc)
-		time.sleep(7)
-		os.system("cls")
-
-		print("✅ Acceso permitido")
-		self.tabla_dinamica()   # se llama con self
-
-	def tabla_dinamica(self):
-		print(">>> Función PlazoDeLaDeuda ejecutada correctamente 🎉")
-		print("Holailas !!!")
-		time.sleep(22)
+    def tabla_dinamica(self):
+        escribir_lento(">>> Función PlazoDeLaDeuda ejecutada correctamente 🎉", delay=0.05)
+        escribir_lento("Holailas !!!", delay=0.05)
+        time.sleep(22)
 
 
 if __name__ == '__main__':
-	Main()
+    Main()
