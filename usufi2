@@ -1,5 +1,7 @@
 import time
 import os
+import sys
+
 
 def escribir_lento(texto, delay=0.1):
 	"""Imprime el texto como si estuviera siendo tecleado"""
@@ -44,4 +46,5 @@ class Main(object):
 		time.sleep(22)
 
 
-if __name__ ==
+if __name__ == '__main__':
+	Main()
