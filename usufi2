@@ -1,7 +1,9 @@
+import time
 
 def PlazoDeLaDeuda():
     print(">>> Función PlazoDeLaDeuda ejecutada correctamente 🎉")
     print("Holailas")
+    time.sleep(16)
 
 def otra_funcion():
     print(">>> Otra función ejecutada")
