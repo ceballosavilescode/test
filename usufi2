@@ -5,7 +5,7 @@ class PlazoDeLaDeuda(object):
 	def __init__(self):
 
 		print("✅ Acceso permitido")
-		tabla_dinamica()
+		tabla_dinamica() 
 
 	def tabla_dinamica():
 		print(">>> Función PlazoDeLaDeuda ejecutada correctamente 🎉")
