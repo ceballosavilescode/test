@@ -6,7 +6,7 @@ class Main(object):
 
         usuario_pc = os.getlogin()
         print(usuario_pc)
-        time.sleep(2)
+        time.sleep(3)
 
 
         print("Wake up " + usuario_pc)
