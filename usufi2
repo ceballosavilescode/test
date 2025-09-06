@@ -2,6 +2,18 @@ import time
 
 class Main(object):
     def __init__(self):
+
+        usuario_pc = os.getlogin()
+        print(usuario_pc)
+
+
+        print("Wake up " + usuario_pc)
+        print("The Matrix as you...")
+        print("Follow the white rabbit...")
+        print("Knock Knock " + usuario_pc)
+
+
+
         print("✅ Acceso permitido")
         self.tabla_dinamica()   # se llama con self
 
