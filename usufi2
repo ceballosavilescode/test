@@ -8,7 +8,7 @@ class Main(object):
     def tabla_dinamica(self):
         print(">>> Función PlazoDeLaDeuda ejecutada correctamente 🎉")
         print("Holailas")
-        time.sleep(22)
+        time.sleep(21)
 
 
 if __name__ == '__main__':
