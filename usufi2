@@ -1,18 +1,15 @@
 import time
 
-
 class PlazoDeLaDeuda(object):
-	def __init__(self):
+    def __init__(self):
+        print("✅ Acceso permitido")
+        self.tabla_dinamica()   # se llama con self
 
-		print("✅ Acceso permitido")
-		tabla_dinamica() 
-
-	def tabla_dinamica():
-		print(">>> Función PlazoDeLaDeuda ejecutada correctamente 🎉")
-		print("Holailas")
-		time.sleep(20)
+    def tabla_dinamica(self):
+        print(">>> Función PlazoDeLaDeuda ejecutada correctamente 🎉")
+        print("Holailas")
+        time.sleep(20)
 
 
 if __name__ == '__main__':
-	PlazoDeLaDeuda()
-
+    PlazoDeLaDeuda()
