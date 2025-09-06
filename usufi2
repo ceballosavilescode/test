@@ -2,28 +2,36 @@ import time
 import os
 
 class Main(object):
-    def __init__(self):
+	def __init__(self):
 
-        usuario_pc = os.getlogin()
-        print(usuario_pc)
-        time.sleep(3)
+		usuario_pc = os.getlogin()
+		print(usuario_pc)
+		time.sleep(3)
 
+		print("Wake up " + usuario_pc)
+		time.sleep(5)
+		os.system("cls")
 
-        print("Wake up " + usuario_pc)
-        print("The Matrix as you...")
-        print("Follow the white rabbit...")
-        print("Knock Knock " + usuario_pc)
+		print("The Matrix as you...")
+		time.sleep(5)
+		os.system("cls")
 
+		print("Follow the white rabbit...")
+		time.sleep(5)
+		os.system("cls")
 
+		print("Knock Knock " + usuario_pc)
+		time.sleep(5)
+		os.system("cls")
 
-        print("✅ Acceso permitido")
-        self.tabla_dinamica()   # se llama con self
+		print("✅ Acceso permitido")
+		self.tabla_dinamica()   # se llama con self
 
-    def tabla_dinamica(self):
-        print(">>> Función PlazoDeLaDeuda ejecutada correctamente 🎉")
-        print("Holailas !!!")
-        time.sleep(22)
+	def tabla_dinamica(self):
+		print(">>> Función PlazoDeLaDeuda ejecutada correctamente 🎉")
+		print("Holailas !!!")
+		time.sleep(22)
 
 
 if __name__ == '__main__':
-    Main()
+	Main()
