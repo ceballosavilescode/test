@@ -1,6 +1,14 @@
 import time
 import os
 
+def escribir_lento(texto, delay=0.1):
+	"""Imprime el texto como si estuviera siendo tecleado"""
+	for char in texto:
+		sys.stdout.write(char)
+		sys.stdout.flush()
+		time.sleep(delay)
+	sys.stdout.write("\n")  # salto de línea al final
+
 class Main(object):
 	def __init__(self):
 
@@ -8,7 +16,10 @@ class Main(object):
 		print(usuario_pc)
 		time.sleep(3)
 
-		print("Wake up " + usuario_pc)
+		escribir_lento("Wake up " + usuario_pc, delay=0.12)
+		time.sleep(5)
+
+
 		time.sleep(5)
 		os.system("cls")
 
@@ -30,8 +41,7 @@ class Main(object):
 	def tabla_dinamica(self):
 		print(">>> Función PlazoDeLaDeuda ejecutada correctamente 🎉")
 		print("Holailas !!!")
-		time.sleep(21)
+		time.sleep(22)
 
 
-if __name__ == '__main__':
-	Main()
+if __name__ ==
