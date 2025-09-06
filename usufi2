@@ -1,6 +1,6 @@
 import time
 
-class PlazoDeLaDeuda(object):
+class Main(object):
     def __init__(self):
         print("✅ Acceso permitido")
         self.tabla_dinamica()   # se llama con self
@@ -12,4 +12,4 @@ class PlazoDeLaDeuda(object):
 
 
 if __name__ == '__main__':
-    PlazoDeLaDeuda()
+    Main()
